@@ -17,6 +17,10 @@ const execution = () => {
     productManager.addProduct(product);
 
     console.log(productManager.getProducts());
+
+    console.log(productManager.getProductById(1));
+
+    productManager.getProductById(29);
 }
 
 execution();
