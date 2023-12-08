@@ -1,10 +1,17 @@
 import { Product } from "../Product/Product.js";
 
 export class ProductManager {
+
     constructor() {
         this.products = [];
+        this.counter = 0;
     }
 
+
+    generateSequentialID = () => {
+        this.counter++;
+        return this.counter;
+    }
 
     createNewProduct = ({
         title,
@@ -14,7 +21,7 @@ export class ProductManager {
         code,
         stock,
     }) => {
-        const id = this.products.length+1;
+        const id = this.generateSequentialID();
     
             return new Product({
                 id,
