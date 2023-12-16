@@ -27,7 +27,7 @@ const execution = () => {
 
 const fileBasedExecution = async() => {
 
-    const filePath = "./Products.json";
+    const filePath = "./resources/Products.json";
 
     const product = {
         title: "Test product",
