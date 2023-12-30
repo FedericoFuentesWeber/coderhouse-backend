@@ -109,7 +109,7 @@ router.post("/", uploader.array("thumbnail"), async(req, res) => {
                 }
             });
 
-            newProduct.thumbnails = images.filter((image) => image !== null);
+            newProduct.thumbnail = images.filter((image) => image !== null);
         }
 
 
