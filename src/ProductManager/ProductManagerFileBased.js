@@ -47,7 +47,13 @@ export class ProductManagerFileBased {
 
     addProduct = async(product) => {
         try {
-            if(!product.title || !product.description || !product.price || !product.thumbnail || !product.code || !product.stock) {
+            if(
+                !product.title || 
+                !product.description || 
+                !product.price ||
+                !product.code || 
+                !product.stock
+            ) {
                 throw new Error("Hay parámetros sin completar.")
             }
 
